@@ -5,211 +5,432 @@
   <title>Sangharsh Singh Yadav | Software Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Premium professional portfolio of Sangharsh Singh Yadav">
+  
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- Interactive Canvas Background -->
+<canvas id="particle-canvas"></canvas>
+
 <!-- NAVBAR -->
-<nav>
-  <div class="logo">Sangarch's</div>
+<nav class="glass-nav">
+  <div class="logo">S.S.Y.</div>
   <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#certs">Certifications</a>
-    <a href="#contact">Contact</a>
-    <a href="resume.pdf" download class="btn">Resume</a>
+    <a href="#home" class="hover-target">Home</a>
+    <a href="#about" class="hover-target">About</a>
+    <a href="#skills" class="hover-target">Skills</a>
+    <a href="#projects" class="hover-target">Projects</a>
+    <a href="#certs" class="hover-target">Certifications</a>
+    <a href="#contact" class="hover-target">Contact</a>
+    <a href="resume.pdf" download class="btn outline hover-target">Resume</a>
+  </div>
+  
+  <!-- Mobile Menu Toggle -->
+  <div class="menu-toggle hover-target">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section id="home" class="hero reveal">
-  <div class="hero-text">
-    <h1>
-      I Build <br>
-      <span>Premium Websites, Software & Portfolio's </span>
-    </h1>
-    <p>
-      Aspiring Software Developer focused on building
-      clean, scalable and high-quality applications.
-    </p>
+<section id="home" class="hero section reveal">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="greeting">Hi, my name is</p>
+      <h1>Sangharsh Singh Yadav</h1>
+      <h2 class="typing-container">I build <span class="typing-text"></span><span class="cursor-blink">|</span></h2>
+      <p class="subtitle">
+        Aspiring Software Developer focused on building clean, scalable, and highly interactive web applications.
+      </p>
 
-    <div class="hero-actions">
-      <a href="#projects" class="btn primary">View Work</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary hover-target">View Work</a>
+        <a href="#contact" class="btn secondary hover-target">Contact Me</a>
+      </div>
+
+      <div class="stats glass-panel tilt-element hover-target">
+        <div>
+          <h3>10+</h3>
+          <p>Projects</p>
+        </div>
+        <div>
+          <h3>BTech CSE</h3>
+          <p>7.67 CGPA</p>
+        </div>
+      </div>
     </div>
 
-    <div class="stats">
-      <div>
-        <h3>07+</h3>
-        <p>Projects</p>
-      </div>
-      <div>
-        <h3>BTech CSE</h3>
-        <p>3rd Year</p>
+    <div class="hero-image-wrapper hover-target tilt-element">
+      <div class="hero-image glass-panel">
+        <img src="profilee.jpeg" alt="Profile Photo">
       </div>
     </div>
-  </div>
-
-  <div class="hero-image">
-    <img src="profilee.jpeg" alt="Profile Photo">
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section reveal">
-  <h2>About Me</h2>
-  <p class="section-text">
-    I am a Computer Science Engineering student passionate about
-    building premium, reliable and efficient software solutions.
-    I focus on clean code, performance, and professional user experience.
-  </p>
+  <div class="section-header">
+    <h2 class="gradient-text">About Me</h2>
+    <div class="line"></div>
+  </div>
+  <div class="about-content glass-panel">
+    <p class="section-text" style="text-align: justify; margin-bottom: 15px;">
+      Hi, I'm Sangharsh Singh Yadav, an aspiring Software Developer and a Computer Science Engineering student.
+    </p>
+    <p class="section-text" style="text-align: justify; margin-bottom: 15px;">
+      I enjoy building practical applications using technologies like Python, C, and Web Development. I’m especially interested in creating real-world solutions such as service-based platforms and full-stack applications.
+    </p>
+    <p class="section-text" style="text-align: justify; margin-bottom: 15px;">
+      Currently, I’m focused on improving my problem-solving skills, learning Data Structures & Algorithms, and working on industry-level projects to strengthen my development skills.
+    </p>
+    <p class="section-text" style="text-align: justify; margin-bottom: 15px;">
+      I’m open to internship and full-time opportunities where I can contribute, learn, and grow as a developer.
+    </p>
+    <p class="section-text" style="text-align: justify;">
+      I’m always eager to collaborate, learn new technologies, and take on challenging problems.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <div class="section-header">
+    <h2 class="gradient-text">Tech Stack</h2>
+    <div class="line"></div>
+  </div>
+  <div class="sphere-wrapper glass-panel">
+    <span class="sphere"></span>
+  </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section dark reveal">
-  <h2>Featured Projects</h2>
+<section id="projects" class="section">
+  <div class="section-header reveal">
+    <h2 class="gradient-text">Featured Projects</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="filter-controls reveal">
+    <button class="filter-btn active hover-target" data-filter="all">All</button>
+    <button class="filter-btn hover-target" data-filter="fullstack">Full-Stack</button>
+    <button class="filter-btn hover-target" data-filter="python">Python</button>
+    <button class="filter-btn hover-target" data-filter="vanilla">Vanilla JS</button>
+  </div>
 
   <div class="card-grid">
-    <div class="card">
-      <h3>AI-Powered Resume ATS Analyzer</h3>
-      
-      <p>Engineered a full-stack tool to parse and score resumes against job descriptions, using Regex-based extraction to improve data accuracy by 35%.
-Architected a modular backend featuring Roadmap Generation logic to suggest missing skills to users based on industry role templates.
-Implemented a custom ATS Scoring Algorithm that evaluates keyword density, formatting, and section relevance..</p>
-      <span><a href="https://github.com/sangharsh95/resume-ats-analyzer">GitHub Repo</a></span>
-<span>Node.js • React.js • MongoDB • PDF.js • Express</span>
-    </div>
-    <div class="card">
-      <h3>Secure Video Authenticator</h3>
-      <p>MVT Framework Implementation: Developed a secure media platform using the Django framework, featuring a centralized videoauth configuration and a specialized videos application for media logic.
-Secure Authentication Flow: Engineered custom backend views and templates, including login.html and base.html, to manage user sessions and enforce media access control.
-Media Management System: Architected asynchronous upload and retrieval workflows with video_upload.html and video_list.html, ensuring data persistence via models.py and db.sqlite3.</p>
-<span><a href="https://github.com/sangharsh95/Secure-Video-Authenticator">GitHub Repo</a></span>      
-<span>Python • Django • SQLite3 • HTML5 • CSS3</span>
-    </div>
-        <div class="card">
-      <h3>MealMitra</h3>
-      <p>A full-stack food delivery application featuring custom styling and improved UX. Features include:</p>
-      <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em;">
-         <li>Dynamic menu rendering and item categorization.</li>
-         <li>State-managed shopping cart with a smooth checkout flow.</li>
-         <li>Fully responsive layout with polished component alignment.</li>
-      </ul>
-      <span><a href="https://github.com/sangharsh95/MealMitra">GitHub Repo</a></span>
-      <span>MERN Stack (MongoDB, Express, React, Node.js)</span> 
+    <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
+      <div class="card-content">
+        <h3>AI-Powered Resume ATS Analyzer</h3>
+        <p>A full-stack tool to parse and score resumes against job descriptions. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Regex-based extraction improving data accuracy by 35%.</li>
+           <li>Modular backend with Roadmap Generation logic to suggest missing skills.</li>
+           <li>Custom ATS Scoring Algorithm evaluating keyword density and formatting.</li>
+        </ul>
+        <div class="tags">
+          <span>Node.js</span><span>React.js</span><span>MongoDB</span><span>PDF.js</span><span>Express</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/resume-ats-analyzer" class="hover-target" target="_blank">GitHub</a>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Expense Management System</h3>
-      <p>The Expense Management System is a web-based application designed to automate and streamline the manual expense reimbursement processes typically found in corporate environments. It focuses on reducing errors, improving transparency, and speeding up the approval cycle through customizable, multi-level workflows.  Purpose: To replace manual paper-based or spreadsheet-based expense tracking with a digital system.</p>
-      <span><a href="https://github.com/sangharsh95/Expense-Management-System">GitHub Repo</a></span>
-      <span>JavaScript • HTML • CSS</span>
+    <div class="card glass-panel tilt-element project-card reveal" data-category="python">
+      <div class="card-content">
+        <h3>Secure Video Authenticator</h3>
+        <p>A secure media platform built using the Django framework. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>MVT Framework Implementation featuring centralized video auth and specialized media logic.</li>
+           <li>Secure Authentication Flow managing user sessions and enforcing media access control.</li>
+           <li>Media Management System with asynchronous upload/retrieval workflows ensuring data persistence.</li>
+        </ul>
+        <div class="tags">
+          <span>Python</span><span>Django</span><span>SQLite3</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/Secure-Video-Authenticator" class="hover-target" target="_blank">GitHub</a>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Library Management System</h3>
-      <p>Complete system for managing books, users, and issue records.</p>
-      <span><a href="https://github.com/sangharsh95/Library-Management-System">GitHub Repo</a></span>
-      <span>HTML • CSS • JavaScript</span>
+    <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
+      <div class="card-content">
+        <h3>Food Delivery Web App (MealMitra)</h3>
+        <p>A comprehensive food delivery platform built on the MERN stack with scalable architecture. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>JWT-based authentication using middleware to protect routes.</li>
+           <li>RESTful APIs handling core business logic and dynamic MongoDB schemas.</li>
+           <li>Global state management via Context API for responsive UI components.</li>
+        </ul>
+        <div class="tags">
+          <span>MERN</span><span>React</span><span>Express</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/MealMitra" class="hover-target" target="_blank">GitHub</a>
+      </div>
     </div>
 
-<div class="card">
-      <h3>Solar System Explorer</h3>
-      <p>Just
-         For
-         Fun.</p>
-      <span><a href="https://sangharsh95.github.io/Solar-System-Explorer/">Funnnnn Live Link</a></span>
-      <span>JavaScript • API</span>
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+      <div class="card-content">
+        <h3>Expense Management System</h3>
+        <p>A web-based application designed to automate corporate expense reimbursement processes. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Reduces errors and improves transparency in financial tracking.</li>
+           <li>Speeds up the approval cycle through customizable, multi-level workflows.</li>
+           <li>Replaces manual paper or spreadsheet-based tracking with a streamlined digital system.</li>
+        </ul>
+        <div class="tags">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/Expense-Management-System" class="hover-target" target="_blank">GitHub</a>
+      </div>
     </div>
-
-
     
-    <div class="card">
-      <h3>AI-Powered-Search-Tool </h3>
-      <p>An interactive, web-based search application built with HTML, CSS, and JavaScript, powered by OpenAI’s GPT model to provide instant, intelligent answers to user queries.</p>
-      <span><a href="https://github.com/sangharsh95/AI-Powered-Search-Tool">GitHub Repo</a></span>
-      <span>JavaScript • HTML • CSS • API</span>
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+      <div class="card-content">
+        <h3>AI-Powered Search Tool</h3>
+        <p>An interactive web search application powered by OpenAI’s GPT model. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Provides instant, intelligent, and context-aware answers.</li>
+           <li>Seamless integration with advanced AI APIs.</li>
+           <li>Clean, responsive interface for rapid querying.</li>
+        </ul>
+        <div class="tags">
+          <span>JavaScript</span><span>REST API</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/AI-Powered-Search-Tool" class="hover-target" target="_blank">GitHub</a>
+      </div>
     </div>
 
-<div class="card">
-      <h3>Event-Scheduler</h3>
-      <p>Event Scheduler is a web-based application built using HTML, CSS, and JavaScript that allows users to create, manage, and track their events with ease.</p>
-      <span><a href="https://github.com/sangharsh95/Typing-Speed-Test-App">GitHub Repo</a></span>
-      <span>JavaScript • HTML • CSS • API</span>
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+      <div class="card-content">
+        <h3>Solar System Explorer</h3>
+        <p>An interactive, educational visualization of the solar system. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Built entirely with Vanilla JavaScript and CSS.</li>
+           <li>Dynamic animations and interactive planetary data.</li>
+           <li>A "Just For Fun" project highlighting front-end DOM manipulation skills.</li>
+        </ul>
+        <div class="tags">
+          <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Animation</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://sangharsh95.github.io/Solar-System-Explorer/" class="hover-target" target="_blank">Live Demo</a>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Typing Speed Test</h3>
-      <p>Typing speed and accuracy evaluation with analytics.</p>
-      <span><a href="https://github.com/sangharsh95/Typing-Speed-Test-App">GitHub Repo</a></span>
-      <span>JavaScript • API</span>
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+      <div class="card-content">
+        <h3>Library Management System</h3>
+        <p>A complete system for managing library operations. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Manages book inventories and categorizations.</li>
+           <li>Handles user registrations and tracking.</li>
+           <li>Streamlines issue and return records effectively.</li>
+        </ul>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/Library-Management-System" class="hover-target" target="_blank">GitHub</a>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Student-Management-System</h3>
-      <p>Academic result management with CRUD operations.</p>
-      <span><a href="https://github.com/sangharsh95/Student-Management-System">GitHub Repo</a></span>
-      <span>HTML • CSS • JavaScript</span>
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+      <div class="card-content">
+        <h3>Event-Scheduler</h3>
+        <p>A web-based application for streamlined event management. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Allows users to create and customize events.</li>
+           <li>Provides tools to manage attendee tracking.</li>
+           <li>Intuitive interface for tracking upcoming schedules.</li>
+        </ul>
+        <div class="tags">
+          <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>REST API</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/Event-Scheduler" class="hover-target" target="_blank">GitHub</a>
+      </div>
     </div>
+
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+      <div class="card-content">
+        <h3>Typing Speed Test</h3>
+        <p>A typing speed and accuracy evaluation tool. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Real-time calculation of WPM (Words Per Minute).</li>
+           <li>Accuracy tracking and error highlighting.</li>
+           <li>Performance analytics upon test completion.</li>
+        </ul>
+        <div class="tags">
+          <span>JavaScript</span><span>API</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/Typing-Speed-Test-App" class="hover-target" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+      <div class="card-content">
+        <h3>Student-Management-System</h3>
+        <p>An academic result management platform. Key features:</p>
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+           <li>Full CRUD operations for student records.</li>
+           <li>Efficient academic result tracking and updating.</li>
+           <li>Clean architecture for scalable data management.</li>
+        </ul>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/sangharsh95/Student-Management-System" class="hover-target" target="_blank">GitHub</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
 <section id="certs" class="section reveal">
-  <h2>Certifications</h2>
+  <div class="section-header">
+    <h2 class="gradient-text">Experience & Certifications</h2>
+    <div class="line"></div>
+  </div>
 
-  <div class="timeline">
-    <div>AWS - Solutions Architecture Job Simulation  <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_2BpDv9Pv7zv6XapRT_1753995952454_completion_certificate.pdf">Link</a></div>
-    <div>Accenture Nordics - Software Engineering Job Simulation  <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_2BpDv9Pv7zv6XapRT_1755282397006_completion_certificate.pdf">Link</a></div>
-    <div>J.P. Morgan - Software Engineering Job Simulation  <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_2BpDv9Pv7zv6XapRT_1753996941520_completion_certificate.pdf">Link</a></div>
-    <div>Tata - ESG Job Simulation  <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1754244506653_completion_certificate.pdf">Link</a></div>
-    <div> Accenture UK - Introduction to Technology Apprenticeship Job Simulation <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/EzKFRQ2oEA87PPjsL_ovyvuqqNRQKBjNxbj_2BpDv9Pv7zv6XapRT_1753744877219_completion_certificate.pdf">Link</a></div>
-    <div>Deloitte Australia - Technology  Job Simulation  <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_2BpDv9Pv7zv6XapRT_1753705342669_completion_certificate.pdf">Link</a></div>
-    <div>Tata - GenAI Powered Data Analytics Job Simulation  <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1753747723953_completion_certificate.pdf">Link</a></div>
-
-    
+  <div class="timeline glass-panel">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Technical Coordinator</h4>
+      <p>College Tech Fest</p>
+      <a href="javascript:void(0)" style="cursor:default; color:var(--text-muted)">Leadership: Managed a team of 15 student volunteers</a>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Applied Generative AI Certification</h4>
+      <p>Infosys Springboard</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Agile Scrum Certification</h4>
+      <p>Infosys Springboard</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Generative AI Foundations: IT Integration</h4>
+      <p>Infosys Springboard</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>AWS Solutions Architecture</h4>
+      <p>Job Simulation</p>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_2BpDv9Pv7zv6XapRT_1753995952454_completion_certificate.pdf" target="_blank">View Credential</a>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Accenture Nordics</h4>
+      <p>Software Engineering Job Simulation</p>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_2BpDv9Pv7zv6XapRT_1755282397006_completion_certificate.pdf" target="_blank">View Credential</a>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>J.P. Morgan</h4>
+      <p>Software Engineering Job Simulation</p>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_2BpDv9Pv7zv6XapRT_1753996941520_completion_certificate.pdf" target="_blank">View Credential</a>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Tata</h4>
+      <p>ESG Job Simulation</p>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1754244506653_completion_certificate.pdf" target="_blank">View Credential</a>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Accenture UK</h4>
+      <p>Intro to Tech Apprenticeship Job Simulation</p>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/EzKFRQ2oEA87PPjsL_ovyvuqqNRQKBjNxbj_2BpDv9Pv7zv6XapRT_1753744877219_completion_certificate.pdf" target="_blank">View Credential</a>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Deloitte Australia</h4>
+      <p>Technology Job Simulation</p>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_2BpDv9Pv7zv6XapRT_1753705342669_completion_certificate.pdf" target="_blank">View Credential</a>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <h4>Tata</h4>
+      <p>GenAI Powered Data Analytics Job Simulation</p>
+      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1753747723953_completion_certificate.pdf" target="_blank">View Credential</a>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section dark reveal">
-  <h2>Contact</h2>
+<section id="contact" class="section reveal">
+  <div class="section-header">
+    <h2 class="gradient-text">Get In Touch</h2>
+    <div class="line"></div>
+  </div>
 
   <div class="contact-grid">
-    <div class="contact-info">
+    <div class="contact-info glass-panel">
+      <h3>Let's collaborate</h3>
       <p>
         Interested in working together or discussing opportunities?
-        Please reach out using the form.
-        Contact for Resume Building and Portfolio.
+        Please reach out using the form. Contact for Resume Building and Portfolio.
       </p>
-
-      <p><strong>Email:</strong> singhsangharshy95@gmail.com</p>
-      <p><strong>LinkedIn:</strong> linkedin.com/in/sangharsh-singh-yadav</p>
-      <p><strong>GitHub:</strong> github.com/sangharsh95</p>
+      <div class="contact-links">
+        <a href="mailto:singhsangharshy95@gmail.com" class="hover-target">✉ singhsangharshy95@gmail.com</a>
+        <a href="https://linkedin.com/in/sangharsh-singh-yadav" target="_blank" class="hover-target">in LinkedIn</a>
+        <a href="https://github.com/sangharsh95" target="_blank" class="hover-target">gh GitHub</a>
+      </div>
     </div>
 
-    <form id="contact-form" class="contact-form">
-      <input type="text" name="user_name" placeholder="Your Name" required>
-      <input type="email" name="user_email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+    <form id="contact-form" class="contact-form glass-panel">
+      <div class="input-group">
+        <input type="text" name="user_name" placeholder="Your Name" required class="hover-target">
+      </div>
+      <div class="input-group">
+        <input type="email" name="user_email" placeholder="Your Email" required class="hover-target">
+      </div>
+      <div class="input-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required class="hover-target"></textarea>
+      </div>
+      <button type="submit" class="btn primary hover-target">Send Message <span class="arrow">→</span></button>
       <p id="form-status"></p>
     </form>
   </div>
 </section>
 
 <footer>
-  © 2026 Sangharsh Singh Yadav. All Rights Reserved.
+  <p>© 2026 Sangharsh Singh Yadav. Designed with <span class="heart">♥</span> and Advanced Web Tech.</p>
 </footer>
 
-<!-- EmailJS CDN -->
+<!-- External Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
