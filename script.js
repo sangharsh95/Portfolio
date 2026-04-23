@@ -74,7 +74,12 @@ window.addEventListener('scroll', () => {
 
 // --- TYPING EFFECT ---
 const typingText = document.querySelector('.typing-text');
-const words = ["Full-Stack Developer.", "MERN Specialist.", "Problem Solver.", "Software Engineer."];
+const words = [
+  "Full-Stack Applications.",
+  "Scalable Web Apps.",
+  "Modern MERN Projects.",
+  "High-Performance Solutions."
+];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
