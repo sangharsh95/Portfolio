@@ -5,14 +5,15 @@
   <title>Sangharsh Singh Yadav | Software Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Premium professional portfolio of Sangharsh Singh Yadav">
-  
+
   <!-- Google Fonts: Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- Custom Cursor -->
@@ -25,6 +26,7 @@
 <!-- NAVBAR -->
 <nav class="glass-nav">
   <div class="logo">S.S.Y.</div>
+
   <div class="nav-links">
     <a href="#home" class="hover-target">Home</a>
     <a href="#about" class="hover-target">About</a>
@@ -34,7 +36,7 @@
     <a href="#contact" class="hover-target">Contact</a>
     <a href="resume.pdf" download class="btn outline hover-target">Resume</a>
   </div>
-  
+
   <!-- Mobile Menu Toggle -->
   <div class="menu-toggle hover-target">
     <div class="bar"></div>
@@ -46,10 +48,16 @@
 <!-- HERO -->
 <section id="home" class="hero section reveal">
   <div class="hero-content">
+
     <div class="hero-text">
       <p class="greeting">Hi, my name is</p>
+
       <h1>Sangharsh Singh Yadav</h1>
-      <h2 class="typing-container">I build <span class="typing-text"></span><span class="cursor-blink">|</span></h2>
+
+      <h2 class="typing-container">
+        I build <span class="typing-text"></span><span class="cursor-blink">|</span>
+      </h2>
+
       <p class="subtitle">
         Aspiring Software Developer focused on building clean, scalable, and highly interactive web applications.
       </p>
@@ -60,14 +68,17 @@
       </div>
 
       <div class="stats glass-panel tilt-element hover-target">
+
         <div>
           <h3>10+</h3>
           <p>Projects</p>
         </div>
+
         <div>
           <h3>BTech CSE</h3>
           <p>7.67 CGPA</p>
         </div>
+
       </div>
     </div>
 
@@ -76,57 +87,65 @@
         <img src="profilee.jpeg" alt="Profile Photo">
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section reveal">
+
   <div class="section-header">
     <h2 class="gradient-text">About Me</h2>
     <div class="line"></div>
   </div>
 
   <div class="about-content glass-panel">
+
     <p class="section-text" style="text-align: justify; margin-bottom: 15px;">
-      Hi, I’m <strong>Sangharsh Singh Yadav</strong> — a Computer Science Engineering student and aspiring 
-      <strong>Software Engineer</strong> passionate about turning ideas into practical, scalable, and 
+      Hi, I’m <strong>Sangharsh Singh Yadav</strong> — a Computer Science Engineering student and aspiring
+      <strong>Software Engineer</strong> passionate about turning ideas into practical, scalable, and
       user-focused applications.
     </p>
 
     <p class="section-text" style="text-align: justify; margin-bottom: 15px;">
-      My primary focus is <strong>Full-Stack Development, Backend Engineering, and Data Structures & Algorithms</strong>. 
-      I enjoy building modern web applications using the <strong>MERN stack and Python/Django</strong>, 
+      My primary focus is <strong>Full-Stack Development, Backend Engineering, and Data Structures & Algorithms</strong>.
+      I enjoy building modern web applications using the <strong>MERN stack and Python/Django</strong>,
       while working with REST APIs, authentication, databases, and responsive user interfaces.
     </p>
 
     <p class="section-text" style="text-align: justify; margin-bottom: 15px;">
-      I believe in learning by <strong>building real projects and solving real problems</strong>. 
-      From food delivery platforms and CRM dashboards to secure applications and AI-powered tools, 
+      I believe in learning by <strong>building real projects and solving real problems</strong>.
+      From food delivery platforms and CRM dashboards to secure applications and AI-powered tools,
       I’m constantly challenging myself to learn new technologies and write better, more reliable code.
     </p>
 
     <p class="section-text" style="text-align: justify;">
-      Currently, I’m sharpening my problem-solving skills, strengthening my core computer science 
-      fundamentals, and working toward becoming a well-rounded <strong>Software Engineer</strong>. 
-      I’m open to <strong>internship and software engineering opportunities</strong> where I can contribute, 
+      Currently, I’m sharpening my problem-solving skills, strengthening my core computer science
+      fundamentals, and working toward becoming a well-rounded <strong>Software Engineer</strong>.
+      I’m open to <strong>internship and software engineering opportunities</strong> where I can contribute,
       learn from experienced teams, and grow through meaningful work.
     </p>
+
   </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="section reveal">
+
   <div class="section-header">
     <h2 class="gradient-text">Tech Stack</h2>
     <div class="line"></div>
   </div>
+
   <div class="sphere-wrapper glass-panel">
     <span class="sphere"></span>
   </div>
+
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
+
   <div class="section-header reveal">
     <h2 class="gradient-text">Featured Projects</h2>
     <div class="line"></div>
@@ -138,269 +157,808 @@
     <button class="filter-btn hover-target" data-filter="python">Python</button>
     <button class="filter-btn hover-target" data-filter="vanilla">Vanilla JS</button>
   </div>
-  
- <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
-  <div class="card-content">
-    <h3>Vendora - Multi-Vendor E-Commerce Platform</h3>
-    <p>A full-stack, multi-vendor e-commerce platform built with Next.js and Prisma. Key features:</p>
-    <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-       <li>Robust multi-vendor architecture providing distinct, dedicated dashboards for Admins, Vendors, and Customers.</li>
-       <li>Integrated Stripe for secure payment processing and implemented role-based authentication using NextAuth.</li>
-       <li>Interactive sales analytics and data visualization on vendor dashboards utilizing Recharts.</li>
-    </ul>
-    <div class="tags">
-      <span>Next.js</span><span>Prisma</span><span>PostgreSQL</span><span>Tailwind CSS</span><span>Stripe</span><span>Redux</span>
-    </div>
-  </div>
-  <div class="card-links">
-    <a href="https://github.com/sangharsh95/Vendora" class="hover-target" target="_blank">GitHub</a> </br>
-    <a href="https://vendora-two-zeta.vercel.app" class="hover-target" target="_blank">Live Demo</a>
-  </div>
-</div>
 
-<div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
-  <div class="card-content">
-    <h3>ServiceHub - Service Marketplace</h3>
-    <p>A comprehensive full-stack platform connecting clients with service providers. Key features:</p>
-    <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-       <li>Developed a scalable MERN stack (MongoDB, Express, React, Node.js) architecture with a custom RESTful API.</li>
-       <li>Integrated secure user authentication using JWT and seamless payment processing via Stripe.</li>
-       <li>Built a highly dynamic frontend utilizing Vite and React, featuring smooth UI animations with Framer Motion and efficient state management using Zustand.</li>
-    </ul>
-    <div class="tags">
-      <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Tailwind CSS</span><span>Zustand</span><span>Stripe</span>
-    </div>
-  </div>
-  <div class="card-links">
-    
-    <a href="https://github.com/sangharsh95/ServiceHub" class="hover-target" target="_blank">GitHub</a> </br>
-    <a href="https://frontend-hazel-omega-57.vercel.app/" class="hover-target" target="_blank">Explore Live</a>
-  </div>
-</div>
-  
-<div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
-      <div class="card-content">
-        <h3>Food Delivery Web App (MealMitra)</h3>
-        <p>A comprehensive food delivery platform built on the MERN stack with scalable architecture. Key features:</p>
-        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>JWT-based authentication using middleware to protect routes.</li>
-           <li>RESTful APIs handling core business logic and dynamic MongoDB schemas.</li>
-           <li>Global state management via Context API for responsive UI components.</li>
-        </ul>
-        <div class="tags">
-          <span>MERN</span><span>React</span><span>Express</span>
-        </div>
-      </div>
-      <div class="card-links">
-        <a href="https://github.com/sangharsh95/MealMitra" class="hover-target" target="_blank">GitHub</a>
-      </div>
-    </div>
-  
   <div class="card-grid">
+
+    <!-- Vendora -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
+
       <div class="card-content">
+
+        <h3>Vendora - Multi-Vendor E-Commerce Platform</h3>
+
+        <p>
+          A full-stack, multi-vendor e-commerce platform built with Next.js and Prisma. Key features:
+        </p>
+
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+
+          <li>
+            Robust multi-vendor architecture providing distinct, dedicated dashboards for Admins, Vendors, and Customers.
+          </li>
+
+          <li>
+            Integrated Stripe for secure payment processing and implemented role-based authentication using NextAuth.
+          </li>
+
+          <li>
+            Interactive sales analytics and data visualization on vendor dashboards utilizing Recharts.
+          </li>
+
+        </ul>
+
+        <div class="tags">
+          <span>Next.js</span>
+          <span>Prisma</span>
+          <span>PostgreSQL</span>
+          <span>Tailwind CSS</span>
+          <span>Stripe</span>
+          <span>Redux</span>
+        </div>
+
+      </div>
+
+      <div class="card-links">
+
+        <a
+          href="https://github.com/sangharsh95/Vendora"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://vendora-two-zeta.vercel.app"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Live Demo
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- ServiceHub -->
+    <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
+
+      <div class="card-content">
+
+        <h3>ServiceHub - Service Marketplace</h3>
+
+        <p>
+          A comprehensive full-stack platform connecting clients with service providers. Key features:
+        </p>
+
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+
+          <li>
+            Developed a scalable MERN stack (MongoDB, Express, React, Node.js) architecture with a custom RESTful API.
+          </li>
+
+          <li>
+            Integrated secure user authentication using JWT and seamless payment processing via Stripe.
+          </li>
+
+          <li>
+            Built a highly dynamic frontend utilizing Vite and React, featuring smooth UI animations with Framer Motion and efficient state management using Zustand.
+          </li>
+
+        </ul>
+
+        <div class="tags">
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>Tailwind CSS</span>
+          <span>Zustand</span>
+          <span>Stripe</span>
+        </div>
+
+      </div>
+
+      <div class="card-links">
+
+        <a
+          href="https://github.com/sangharsh95/ServiceHub"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://frontend-hazel-omega-57.vercel.app/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- MealMitra -->
+    <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
+
+      <div class="card-content">
+
+        <h3>Food Delivery Web App (MealMitra)</h3>
+
+        <p>
+          A comprehensive food delivery platform built on the MERN stack with scalable architecture. Key features:
+        </p>
+
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+
+          <li>
+            JWT-based authentication using middleware to protect routes.
+          </li>
+
+          <li>
+            RESTful APIs handling core business logic and dynamic MongoDB schemas.
+          </li>
+
+          <li>
+            Global state management via Context API for responsive UI components.
+          </li>
+
+        </ul>
+
+        <div class="tags">
+          <span>MERN</span>
+          <span>React</span>
+          <span>Express</span>
+        </div>
+
+      </div>
+
+      <div class="card-links">
+
+        <a
+          href="https://github.com/sangharsh95/MealMitra"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Smart Leads -->
+    <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
+
+      <div class="card-content">
+
         <h3>Smart Leads Management Dashboard</h3>
-        <p>A production-ready, full-stack CRM application with secure authentication. Key features:</p>
+
+        <p>
+          A production-ready, full-stack CRM application with secure authentication. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Engineered a secure JWT authentication flow with strict Role-Based Access Control (RBAC) separating Admin and Sales environments.</li>
-           <li>Integrated robust data validation workflows using Zod schemas across both client and server, and implemented direct-to-CSV data export functionality using json2csv.</li>
-           <li>Designed a responsive, dark-mode supported UI using Tailwind CSS and containerized the entire infrastructure using Docker for seamless deployment.</li>
+
+          <li>
+            Engineered a secure JWT authentication flow with strict Role-Based Access Control (RBAC) separating Admin and Sales environments.
+          </li>
+
+          <li>
+            Integrated robust data validation workflows using Zod schemas across both client and server, and implemented direct-to-CSV data export functionality using json2csv.
+          </li>
+
+          <li>
+            Designed a responsive, dark-mode supported UI using Tailwind CSS and containerized the entire infrastructure using Docker for seamless deployment.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>TypeScript</span><span>React.js</span><span>Node.js</span><span>MongoDB</span><span>Tailwind CSS</span><span>Docker</span>
+          <span>TypeScript</span>
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>Tailwind CSS</span>
+          <span>Docker</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/smart-leads-dashboard" class="hover-target" target="_blank">GitHub</a> </br>
-        <a href="https://smart-leads-dashboard-phi.vercel.app" class="hover-target" target="_blank">Explore Live</a>
+
+        <a
+          href="https://github.com/sangharsh95/smart-leads-dashboard"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://smart-leads-dashboard-phi.vercel.app"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
       </div>
+
     </div>
 
+    <!-- AI Resume ATS Analyzer -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="fullstack">
+
       <div class="card-content">
+
         <h3>AI-Powered Resume ATS Analyzer</h3>
-        <p>A full-stack tool to parse and score resumes against job descriptions. Key features:</p>
+
+        <p>
+          A full-stack tool to parse and score resumes against job descriptions. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Regex-based extraction improving data accuracy by 35%.</li>
-           <li>Modular backend with Roadmap Generation logic to suggest missing skills.</li>
-           <li>Custom ATS Scoring Algorithm evaluating keyword density and formatting.</li>
+
+          <li>
+            Regex-based extraction improving data accuracy by 35%.
+          </li>
+
+          <li>
+            Modular backend with Roadmap Generation logic to suggest missing skills.
+          </li>
+
+          <li>
+            Custom ATS Scoring Algorithm evaluating keyword density and formatting.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>Node.js</span><span>React.js</span><span>MongoDB</span><span>PDF.js</span><span>Express</span>
+          <span>Node.js</span>
+          <span>React.js</span>
+          <span>MongoDB</span>
+          <span>PDF.js</span>
+          <span>Express</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/resume-ats-analyzer" class="hover-target" target="_blank">GitHub</a>
+
+        <a
+          href="https://github.com/sangharsh95/resume-ats-analyzer"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
       </div>
+
     </div>
 
+    <!-- Secure Video Authenticator -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="python">
+
       <div class="card-content">
+
         <h3>Secure Video Authenticator</h3>
-        <p>A secure media platform built using the Django framework. Key features:</p>
+
+        <p>
+          A secure media platform built using the Django framework. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>MVT Framework Implementation featuring centralized video auth and specialized media logic.</li>
-           <li>Secure Authentication Flow managing user sessions and enforcing media access control.</li>
-           <li>Media Management System with asynchronous upload/retrieval workflows ensuring data persistence.</li>
+
+          <li>
+            MVT Framework Implementation featuring centralized video auth and specialized media logic.
+          </li>
+
+          <li>
+            Secure Authentication Flow managing user sessions and enforcing media access control.
+          </li>
+
+          <li>
+            Media Management System with asynchronous upload/retrieval workflows ensuring data persistence.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>Python</span><span>Django</span><span>SQLite3</span><span>HTML5</span><span>CSS3</span>
+          <span>Python</span>
+          <span>Django</span>
+          <span>SQLite3</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/Secure-Video-Authenticator" class="hover-target" target="_blank">GitHub</a>
+
+        <a
+          href="https://github.com/sangharsh95/Secure-Video-Authenticator"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
       </div>
+
     </div>
 
+    <!-- Expense Management System -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
       <div class="card-content">
+
         <h3>Expense Management System</h3>
-        <p>A web-based application designed to automate corporate expense reimbursement processes. Key features:</p>
+
+        <p>
+          A web-based application designed to automate corporate expense reimbursement processes. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Reduces errors and improves transparency in financial tracking.</li>
-           <li>Speeds up the approval cycle through customizable, multi-level workflows.</li>
-           <li>Replaces manual paper or spreadsheet-based tracking with a streamlined digital system.</li>
+
+          <li>
+            Reduces errors and improves transparency in financial tracking.
+          </li>
+
+          <li>
+            Speeds up the approval cycle through customizable, multi-level workflows.
+          </li>
+
+          <li>
+            Replaces manual paper or spreadsheet-based tracking with a streamlined digital system.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/Expense-Management-System" class="hover-target" target="_blank">GitHub</a> </br>
-        <a href="https://sangharsh95.github.io/Expense-Management-System/" class="hover-target" target="_blank">Explore Live</a>
+
+        <a
+          href="https://github.com/sangharsh95/Expense-Management-System"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://sangharsh95.github.io/Expense-Management-System/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
       </div>
+
     </div>
 
-<div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
-  <div class="card-content">
-    <h3>Netflix Landing Page Clone</h3>
-    <p>A responsive, highly accurate frontend recreation of the Netflix India landing page. Key features:</p>
-    <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-       <li>Built entirely with Vanilla JavaScript, semantic HTML5, and pure CSS3.</li>
-       <li>Developed a functional, interactive Authentication Modal (Sign In/Sign Up) using DOM manipulation.</li>
-       <li>Features fully responsive layouts, interactive FAQ accordions, and background video integration.</li>
-    </ul>
-    <div class="tags">
-      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>DOM Manipulation</span>
-    </div>
-  </div>
-  <div class="card-links">
-    <a href="https://github.com/sangharsh95/Netflix-Clone" class="hover-target" target="_blank">GitHub</a> </br>
-    <a href="https://sangharsh95.github.io/Netflix-Clone/" class="hover-target" target="_blank">Explore Live</a>
-  </div>
-</div>
-    
+    <!-- Netflix Clone -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
       <div class="card-content">
+
+        <h3>Netflix Landing Page Clone</h3>
+
+        <p>
+          A responsive, highly accurate frontend recreation of the Netflix India landing page. Key features:
+        </p>
+
+        <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
+
+          <li>
+            Built entirely with Vanilla JavaScript, semantic HTML5, and pure CSS3.
+          </li>
+
+          <li>
+            Developed a functional, interactive Authentication Modal (Sign In/Sign Up) using DOM manipulation.
+          </li>
+
+          <li>
+            Features fully responsive layouts, interactive FAQ accordions, and background video integration.
+          </li>
+
+        </ul>
+
+        <div class="tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>DOM Manipulation</span>
+        </div>
+
+      </div>
+
+      <div class="card-links">
+
+        <a
+          href="https://github.com/sangharsh95/Netflix-Clone"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://sangharsh95.github.io/Netflix-Clone/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- AI-Powered Search Tool -->
+    <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
+      <div class="card-content">
+
         <h3>AI-Powered Search Tool</h3>
-        <p>An interactive web search application powered by OpenAI’s GPT model. Key features:</p>
+
+        <p>
+          An interactive web search application powered by OpenAI’s GPT model. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Provides instant, intelligent, and context-aware answers.</li>
-           <li>Seamless integration with advanced AI APIs.</li>
-           <li>Clean, responsive interface for rapid querying.</li>
+
+          <li>
+            Provides instant, intelligent, and context-aware answers.
+          </li>
+
+          <li>
+            Seamless integration with advanced AI APIs.
+          </li>
+
+          <li>
+            Clean, responsive interface for rapid querying.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>JavaScript</span><span>REST API</span><span>HTML5</span><span>CSS3</span>
+          <span>JavaScript</span>
+          <span>REST API</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/AI-Powered-Search-Tool" class="hover-target" target="_blank">GitHub</a>
+
+        <a
+          href="https://github.com/sangharsh95/AI-Powered-Search-Tool"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
       </div>
+
     </div>
 
+    <!-- Solar System Explorer -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
       <div class="card-content">
+
         <h3>Solar System Explorer</h3>
-        <p>An interactive, educational visualization of the solar system. Key features:</p>
+
+        <p>
+          An interactive, educational visualization of the solar system. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Built entirely with Vanilla JavaScript and CSS.</li>
-           <li>Dynamic animations and interactive planetary data.</li>
-           <li>A "Just For Fun" project highlighting front-end DOM manipulation skills.</li>
+
+          <li>
+            Built entirely with Vanilla JavaScript and CSS.
+          </li>
+
+          <li>
+            Dynamic animations and interactive planetary data.
+          </li>
+
+          <li>
+            A "Just For Fun" project highlighting front-end DOM manipulation skills.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Animation</span>
+          <span>JavaScript</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>Animation</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/Solar-System-Explorer" class="hover-target" target="_blank">GitHub</a> </br>
-        <a href="https://sangharsh95.github.io/Solar-System-Explorer/" class="hover-target" target="_blank">Explore Live</a>
+
+        <a
+          href="https://github.com/sangharsh95/Solar-System-Explorer"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://sangharsh95.github.io/Solar-System-Explorer/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
       </div>
+
     </div>
 
+    <!-- Library Management System -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
       <div class="card-content">
+
         <h3>Library Management System</h3>
-        <p>A complete system for managing library operations. Key features:</p>
+
+        <p>
+          A complete system for managing library operations. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Manages book inventories and categorizations.</li>
-           <li>Handles user registrations and tracking.</li>
-           <li>Streamlines issue and return records effectively.</li>
+
+          <li>
+            Manages book inventories and categorizations.
+          </li>
+
+          <li>
+            Handles user registrations and tracking.
+          </li>
+
+          <li>
+            Streamlines issue and return records effectively.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/Library-Management-System" class="hover-target" target="_blank">GitHub</a> </br>
-        <a href="https://sangharsh95.github.io/Library-Management-System/" class="hover-target" target="_blank">Explore Live</a>
+
+        <a
+          href="https://github.com/sangharsh95/Library-Management-System"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://sangharsh95.github.io/Library-Management-System/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
       </div>
+
     </div>
 
+    <!-- Event Scheduler -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
       <div class="card-content">
+
         <h3>Event-Scheduler</h3>
-        <p>A web-based application for streamlined event management. Key features:</p>
+
+        <p>
+          A web-based application for streamlined event management. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Allows users to create and customize events.</li>
-           <li>Provides tools to manage attendee tracking.</li>
-           <li>Intuitive interface for tracking upcoming schedules.</li>
+
+          <li>
+            Allows users to create and customize events.
+          </li>
+
+          <li>
+            Provides tools to manage attendee tracking.
+          </li>
+
+          <li>
+            Intuitive interface for tracking upcoming schedules.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>REST API</span>
+          <span>JavaScript</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>REST API</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/Event-Scheduler" class="hover-target" target="_blank">GitHub</a> </br>
-        <a href="https://sangharsh95.github.io/Event-Scheduler/" class="hover-target" target="_blank">Explore Live</a>
+
+        <a
+          href="https://github.com/sangharsh95/Event-Scheduler"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://sangharsh95.github.io/Event-Scheduler/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
       </div>
+
     </div>
 
+    <!-- Typing Speed Test -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
       <div class="card-content">
+
         <h3>Typing Speed Test</h3>
-        <p>A typing speed and accuracy evaluation tool. Key features:</p>
+
+        <p>
+          A typing speed and accuracy evaluation tool. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Real-time calculation of WPM (Words Per Minute).</li>
-           <li>Accuracy tracking and error highlighting.</li>
-           <li>Performance analytics upon test completion.</li>
+
+          <li>
+            Real-time calculation of WPM (Words Per Minute).
+          </li>
+
+          <li>
+            Accuracy tracking and error highlighting.
+          </li>
+
+          <li>
+            Performance analytics upon test completion.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>JavaScript</span><span>API</span>
+          <span>JavaScript</span>
+          <span>API</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/Typing-Speed-Test-App" class="hover-target" target="_blank">GitHub</a> </br>
-        <a href="https://sangharsh95.github.io/Typing-Speed-Test-App/" class="hover-target" target="_blank">Explore Live</a>
+
+        <a
+          href="https://github.com/sangharsh95/Typing-Speed-Test-App"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <br>
+
+        <a
+          href="https://sangharsh95.github.io/Typing-Speed-Test-App/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
       </div>
+
     </div>
 
+    <!-- Student Management System -->
     <div class="card glass-panel tilt-element project-card reveal" data-category="vanilla">
+
       <div class="card-content">
+
         <h3>Student-Management-System</h3>
-        <p>An academic result management platform. Key features:</p>
+
+        <p>
+          An academic result management platform. Key features:
+        </p>
+
         <ul style="text-align: left; margin: 10px 0; padding-left: 20px; font-size: 0.9em; color: var(--text-muted);">
-           <li>Full CRUD operations for student records.</li>
-           <li>Efficient academic result tracking and updating.</li>
-           <li>Clean architecture for scalable data management.</li>
+
+          <li>
+            Full CRUD operations for student records.
+          </li>
+
+          <li>
+            Efficient academic result tracking and updating.
+          </li>
+
+          <li>
+            Clean architecture for scalable data management.
+          </li>
+
         </ul>
+
         <div class="tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
         </div>
+
       </div>
+
       <div class="card-links">
-        <a href="https://github.com/sangharsh95/Student-Management-System" class="hover-target" target="_blank">GitHub</a>
-        <a href="https://sangharsh95.github.io/Student-Management-System/" class="hover-target" target="_blank">Explore Live</a>
+
+        <a
+          href="https://github.com/sangharsh95/Student-Management-System"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <a
+          href="https://sangharsh95.github.io/Student-Management-System/"
+          class="hover-target"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Live
+        </a>
+
       </div>
+
     </div>
 
   </div>
@@ -408,124 +966,235 @@
 
 <!-- CERTIFICATIONS -->
 <section id="certs" class="section reveal">
+
   <div class="section-header">
     <h2 class="gradient-text">Experience & Certifications</h2>
     <div class="line"></div>
   </div>
 
   <div class="timeline glass-panel">
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Technical Coordinator</h4>
       <p>College Tech Fest</p>
-      <a href="javascript:void(0)" style="cursor:default; color:var(--text-muted)">Leadership: Managed a team of 15 student volunteers</a>
+      <a href="javascript:void(0)" style="cursor:default; color:var(--text-muted)">
+        Leadership: Managed a team of 15 student volunteers
+      </a>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Applied Generative AI Certification</h4>
       <p>Infosys Springboard</p>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Agile Scrum Certification</h4>
       <p>Infosys Springboard</p>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Generative AI Foundations: IT Integration</h4>
       <p>Infosys Springboard</p>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>AWS Solutions Architecture</h4>
       <p>Job Simulation</p>
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_2BpDv9Pv7zv6XapRT_1753995952454_completion_certificate.pdf" target="_blank">View Credential</a>
+
+      <a
+        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_2BpDv9Pv7zv6XapRT_1753995952454_completion_certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credential
+      </a>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Accenture Nordics</h4>
       <p>Software Engineering Job Simulation</p>
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_2BpDv9Pv7zv6XapRT_1755282397006_completion_certificate.pdf" target="_blank">View Credential</a>
+
+      <a
+        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_2BpDv9Pv7zv6XapRT_1755282397006_completion_certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credential
+      </a>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>J.P. Morgan</h4>
       <p>Software Engineering Job Simulation</p>
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_2BpDv9Pv7zv6XapRT_1753996941520_completion_certificate.pdf" target="_blank">View Credential</a>
+
+      <a
+        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_2BpDv9Pv7zv6XapRT_1753996941520_completion_certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credential
+      </a>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Tata</h4>
       <p>ESG Job Simulation</p>
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1754244506653_completion_certificate.pdf" target="_blank">View Credential</a>
+
+      <a
+        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1754244506653_completion_certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credential
+      </a>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Accenture UK</h4>
       <p>Intro to Tech Apprenticeship Job Simulation</p>
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/EzKFRQ2oEA87PPjsL_ovyvuqqNRQKBjNxbj_2BpDv9Pv7zv6XapRT_1753744877219_completion_certificate.pdf" target="_blank">View Credential</a>
+
+      <a
+        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/EzKFRQ2oEA87PPjsL_ovyvuqqNRQKBjNxbj_2BpDv9Pv7zv6XapRT_1753744877219_completion_certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credential
+      </a>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Deloitte Australia</h4>
       <p>Technology Job Simulation</p>
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_2BpDv9Pv7zv6XapRT_1753705342669_completion_certificate.pdf" target="_blank">View Credential</a>
+
+      <a
+        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_2BpDv9Pv7zv6XapRT_1753705342669_completion_certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credential
+      </a>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <h4>Tata</h4>
       <p>GenAI Powered Data Analytics Job Simulation</p>
-      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1753747723953_completion_certificate.pdf" target="_blank">View Credential</a>
+
+      <a
+        href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_2BpDv9Pv7zv6XapRT_1753747723953_completion_certificate.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Credential
+      </a>
     </div>
+
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section reveal">
+
   <div class="section-header">
     <h2 class="gradient-text">Get In Touch</h2>
     <div class="line"></div>
   </div>
 
   <div class="contact-grid">
+
     <div class="contact-info glass-panel">
+
       <h3>Let's collaborate</h3>
+
       <p>
         Interested in working together or discussing opportunities?
         Please reach out using the form. Contact for Resume Building and Portfolio.
       </p>
+
       <div class="contact-links">
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=singhsangharshy95@gmail.com" target="_blank">
-  ✉ singhsangharshy95@gmail.com
-</a>
-        <a href="https://linkedin.com/in/sangharsh-singh-yadav" target="_blank" class="hover-target">in LinkedIn</a>
-        <a href="https://github.com/sangharsh95" target="_blank" class="hover-target">gh GitHub</a>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=singhsangharshy95@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover-target">
+          ✉ singhsangharshy95@gmail.com
+        </a>
+
+        <a
+          href="https://linkedin.com/in/sangharsh-singh-yadav"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover-target">
+          in LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/sangharsh95"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover-target">
+          gh GitHub
+        </a>
+
       </div>
+
     </div>
 
     <form id="contact-form" class="contact-form glass-panel">
+
       <div class="input-group">
-        <input type="text" name="user_name" placeholder="Your Name" required class="hover-target">
+        <input
+          type="text"
+          name="user_name"
+          placeholder="Your Name"
+          required
+          class="hover-target">
       </div>
+
       <div class="input-group">
-        <input type="email" name="user_email" placeholder="Your Email" required class="hover-target">
+        <input
+          type="email"
+          name="user_email"
+          placeholder="Your Email"
+          required
+          class="hover-target">
       </div>
+
       <div class="input-group">
-        <textarea name="message" placeholder="Your Message" rows="5" required class="hover-target"></textarea>
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+          class="hover-target"></textarea>
       </div>
-      <button type="submit" class="btn primary hover-target">Send Message <span class="arrow">→</span></button>
+
+      <button type="submit" class="btn primary hover-target">
+        Send Message <span class="arrow">→</span>
+      </button>
+
       <p id="form-status"></p>
+
     </form>
+
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Sangharsh Singh Yadav. Designed with <span class="heart">♥</span> and Advanced Web Tech.</p>
+  <p>
+    © 2026 Sangharsh Singh Yadav.
+    Designed with <span class="heart">♥</span> and Advanced Web Tech.
+  </p>
 </footer>
 
 <!-- External Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
